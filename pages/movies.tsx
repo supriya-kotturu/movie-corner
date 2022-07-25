@@ -1,5 +1,5 @@
-import { GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
+import { GetStaticProps, NextPage } from 'next';
 import { PopularMoviesResponseType, PopularMoviesResultType } from '../types';
 
 const Movies: NextPage<{ movies: PopularMoviesResultType[] }> = ({
@@ -18,6 +18,7 @@ const Movies: NextPage<{ movies: PopularMoviesResultType[] }> = ({
 					/>
 				</div>
 			))}
+			<a href='https://storyset.com/web'>Web illustrations by Storyset</a>
 		</div>
 	);
 };
