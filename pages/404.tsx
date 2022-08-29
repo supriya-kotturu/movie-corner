@@ -6,7 +6,7 @@ const NotFound = () => {
 			<div>
 				<Image
 					className='mx-auto'
-					src='/static/images/404.gif'
+					src='/images/404.gif'
 					alt='Page not found'
 					width={680}
 					height={680}
