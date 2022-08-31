@@ -35,9 +35,7 @@
 - [ ] Dashboard Component Layout - fetches the movie lists
   - [ ] Movie Component - child of Dashboard, shows the movie details
   - [ ] List Component - Carrosel component containing the list of movies
-    - [ ] Implement checkbo -select
-    - [ ] Edit User
-    - [ ] Delete User
+  - [ ] Get Random movie Card - display a random movie from the selected genre
 - [ ] Pagination
 - [ ] Dark mode based on user system pereferences
 - [ ] Optimize component rerendering
