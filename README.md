@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movie Corner
 
 ## Getting Started
 
-First, run the development server:
+- Clone the repo
+  ```
+  git clone https://github.com/supriya-kotturu/movie-corner.git
+  ```
+- Install the dependencies
+  ```
+  npm install
+  ```
+- Build the files
+  ```
+  npm run build
+  ```
+- Run the tests
+  ```
+  npm run test
+  ```
+- Run the application in dev mode
+  ```
+  npm run dev
+  ```
+- Run the application
+  ```
+  npm start
+  ```
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Todo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [x] set up tailwind.css - reusable classnames with @apply
+- [ ] add basic animations with framer-motion
+- [ ] implement SSR for displaying movie lists
+- [ ] Dashboard Component Layout - fetches the movie lists
+  - [ ] Movie Component - child of Dashboard, shows the movie details
+  - [ ] List Component - Carrosel component containing the list of movies
+    - [ ] Implement checkbo -select
+    - [ ] Edit User
+    - [ ] Delete User
+- [ ] Pagination
+- [ ] Dark mode based on user system pereferences
+- [ ] Optimize component rerendering
+- [ ] Add Redux-query for fetching requests
+- [ ] Add Toggle button for dark mode
+- [ ] Add Unit Tests
+- [ ] Publish on Netlify
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Note : Dark mode
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Page automatically switches to dark mode based on current system preferences of the user.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To try light/dark mode try switching the system preferences to dark mode
 
-## Learn More
+- On windows, go to settings > prersonalization > colors > choose dark/light in the dropdown
 
-To learn more about Next.js, take a look at the following resources:
+### Note : Unit tests
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tests are still not written for the components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech stack
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- next.js
+- typescript
+- tailwindcss
+- framer-motion
